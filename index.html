@@ -23,13 +23,9 @@
 					<h1>MaptimePHL</h1>
 					<h2>Web Accessibility</h2>
 					<h3>4.6.15</h3>
-					<a href='http://www.girldevelopit.com/'><img src='img/gdi-logo.png' class='gdi-logo' alt='girl develop it logo'></a>
+					<!-- <a href='http://www.girldevelopit.com/'><img src='img/gdi-logo.png' class='gdi-logo' alt='girl develop it logo'></a> -->
 					<h4><a href='https://twitter.com/_leekinney' class='twitter'>@_leekinney</a></h4>
-					<h4><a href='http://ph.ly/network-web-accessibility'>ph.ly/network-web-accessibility</a></h4>
-				</section>
-
-				<section>
-					<img src='img/gdi-mission-cities.jpg' alt='' width='550' height='702'>
+					<h4><a href='http://bit.ly/maptimePHLaccess'>bit.ly/maptimePHLaccess</a></h4>
 				</section>
 
 				<section>
@@ -50,6 +46,7 @@
 						<li class='fragment'>We'll look at some examples.</li>
 						<li class='fragment'>Introduce some tools &amp; techniques.</li>
 						<li class='fragment'>Questions.</li>
+						<li class='fragment'>Activity.</li>
 					</ul>
 				</section>
 
@@ -96,9 +93,9 @@
 					<h2>More stats!</h2>
 					<h3>Of all US computer users.. </h3>
 						<ul>
-							<li style='color: #666;' class="fragment">17% <span class='large'>(21.9 million)</span> have a mild visual difficulty or impairment, 9% <span class='large'>(11.1 million)</span> are severe.</li>
-							<li style='color: #444;' class="fragment">19% <span class='large'>(24.4 million)</span> have a mild dexterity difficulty or impairment, 5% <span class='large'>(6.8 million)</span> are severe.</li>
-							<li style='color: #222;' class="fragment">18% <span class='large'>(24.0 million)</span> have a mild hearing difficulty or impairment, 2% <span class='large'>(2.5 million)</span> are severe.</li>
+							<li style='color: #666;' class="fragment">17% <span class='large'>(22 million)</span> have a mild visual difficulty or impairment, 9% <span class='large'>(11 million)</span> are severe.</li>
+							<li style='color: #444;' class="fragment">19% <span class='large'>(24 million)</span> have a mild dexterity difficulty or impairment, 5% <span class='large'>(7 million)</span> are severe.</li>
+							<li style='color: #222;' class="fragment">18% <span class='large'>(24 million)</span> have a mild hearing difficulty or impairment, 2% <span class='large'>(3 million)</span> are severe.</li>
 						</ul>
 						<p class='credit fragment'>(Source: <a href='http://www.microsoft.com/enable/research/phase1.aspx' target='_blank'>Study Commissioned by Microsoft Corporation and Conducted by Forrester Research, Inc.</a></p>
 				</section>
@@ -239,12 +236,14 @@
 						<pre><code data-trim>.hide {text-indent: -10000px;}</code></pre>
 						<p>Recommended:</p>
 						<pre><code data-trim>.hidden {
-	position:absolute;
-	left:-10000px;
-	top:auto;
-	width:1px;
-	height:1px;
-	overflow:hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }</code></pre>
 						<p class='fragment'><a href='http://webaim.org/techniques/css/invisiblecontent/'>More info on hiding content</a></p>
 						<p class='fragment'><a href='http://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/'>CSS Tricks - Places it's tempting to use display: none; but don't</a></p>
@@ -346,7 +345,7 @@
 				<section>
 					<h2>Resources</h2>
 						<ul>
-							<li class="fragment"><a href="http://www.nvda-project.org/" target="_blank">NonVisual Desktop Access (NVDA)</a>, a free and open source screen reader for Windows.</li>
+							<li class="fragment"><a href="http://a11yproject.com/" target="_blank">A11Y Project</a></li>
 							<li class="fragment"><a href="http://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative (WAI)</a></li>
 							<li class="fragment"><a href="http://webaim.org/" target="_blank">WebAIM</a>, an accessibility-focused organization with great information.</li>
 							<li class="fragment"><a href="http://design4access.nomensa.com/checklist.html" target="_blank">Accessibility Checklist</a></li>
@@ -356,26 +355,8 @@
 
 				<section>
 					<h2>Thank you!</h2>
-						<ul>
-							<li class='fragment'><a href='http://www.meetup.com/Girl-Develop-It-Philadelphia/'>Keep an eye on GDI Philly</a></li>
-							<li class='fragment'>March 25 - Web Accessibility class</li>
-							<li class='fragment'>April 18 <a href='http://phillywomenintech.com/2015/01/17/h-web-accessibility/'>Philly Women in Tech Summit</a></li>
-							<li class='fragment'><a href='https://www.twitter.com/_leekinney' class='twitter'>Tweet at me! @_leekinney</a></li>
-							<li class='fragment'><a href='http://ph.ly/network-web-accessibility'>ph.ly/network-web-accessibility</a></li>
-						</ul>
+					<h3><a href='https://twitter.com/_leekinney'>@_leekinney</a></h3>
 				</section>
-
-				<section>
-					<h2>Questions?</h2>
-						<ul class='fragment'>
-							<li><a href='http://www.meetup.com/Girl-Develop-It-Philadelphia/'>GDI Philly</a></li>
-							<li>March 25 - Web Accessibility class</li>
-							<li>April 18 <a href='http://phillywomenintech.com/2015/01/17/h-web-accessibility/'>Philly Women in Tech Summit</a></li>
-							<li><a href='https://www.twitter.com/_leekinney' class='twitter'>@_leekinney</a></li>
-							<li><a href='http://ph.ly/network-web-accessibility'>ph.ly/network-web-accessibility</a></li>
-						</ul>
-				</section>
-
 			</div><!-- end slides -->
 		</div><!-- end reveal -->
 		<script src="lib/js/head.min.js"></script>
